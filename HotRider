@@ -1,0 +1,6 @@
+from js import robot
+while robot.is_ok():
+    if robot.front() > robot.center():
+        robot.move_forward()
+    elif robot.front() < robot.center():
+        robot.turn_right()
